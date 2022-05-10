@@ -1,0 +1,14 @@
+<main class="container">
+    
+    <section class="row">
+        <form class="col-8 offset-2" [formGroup]="grupo"> 
+            <h1>Nome: {{grupo.value.nome | json}}, idade: {{grupo.value.idade | json}}</h1>
+            <h1></h1>
+            <input type="text"      formControlName="nome"  class="form-control" placeholder="Nome">
+            <input type="number"    formControlName="idade" class="form-control" placeholder="Idade">
+        </form>
+    </section>
+
+</main>
+
+
